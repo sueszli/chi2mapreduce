@@ -1,3 +1,6 @@
+# discarded implementation:
+# the used chi-square formula isn't meant for NLP significance testing
+
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 import mrjob.protocol
@@ -9,13 +12,6 @@ import re
 import json
 from collections import Counter
 import heapq
-
-
-"""
-discarded implementation:
-
-the used chi-square formula isn't meant for NLP significance testing
-"""
 
 
 class ChiSquareJob(MRJob):
